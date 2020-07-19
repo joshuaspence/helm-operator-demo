@@ -1,0 +1,17 @@
+---
+apiVersion: 'helm.fluxcd.io/v1'
+kind: 'HelmRelease'
+metadata:
+  name: 'flux'
+  namespace: 'flux'
+spec:
+  chart:
+    repository: 'https://charts.fluxcd.io'
+    name: 'flux'
+    version: '1.4.0'
+  releaseName: 'flux'
+  values:
+    git:
+      url: 'https://github.com/joshuaspence/helm-operator-demo.git'
+      readonly: true
+      path: 'deployments'
