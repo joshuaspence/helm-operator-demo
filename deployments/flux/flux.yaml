@@ -13,5 +13,6 @@ spec:
   values:
     git:
       url: 'https://github.com/joshuaspence/helm-operator-demo.git'
+      branch: 'v1.0.2'
       readonly: true
       path: 'deployments'
